@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public abstract class Teleporter : MonoBehaviour
 {
@@ -8,7 +7,7 @@ public abstract class Teleporter : MonoBehaviour
 
 	protected Rigidbody rb;
 	// Use this for initialization
-	protected void Start ()
+	protected void Init ()
 	{
 		rb = GetComponent <Rigidbody> ();
 	}

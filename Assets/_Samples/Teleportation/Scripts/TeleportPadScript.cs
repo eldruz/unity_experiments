@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class TeleportPadScript : Teleporter
 {
@@ -8,7 +7,7 @@ public class TeleportPadScript : Teleporter
 
 	void Start ()
 	{
-		base.Start ();
+		Init ();
 	}
 
 	void Update ()

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class PooledObject : MonoBehaviour {
     public ObjectPool Pool { get; set; }

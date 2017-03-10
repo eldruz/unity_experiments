@@ -158,35 +158,15 @@ MonoBehaviour:
   lowestFPSLabel: {fileID: 114000012933924366}
   averageFPSLabel: {fileID: 114000013430477342}
   coloring:
-  - color:
-      r: 0
-      g: 1
-      b: 0.8758622
-      a: 1
+  - color: {r: 0, g: 1, b: 0.8758622, a: 1}
     minimumFPS: 60
-  - color:
-      r: 0
-      g: 1
-      b: 0.25517225
-      a: 1
+  - color: {r: 0, g: 1, b: 0.25517225, a: 1}
     minimumFPS: 45
-  - color:
-      r: 0.90344834
-      g: 1
-      b: 0
-      a: 1
+  - color: {r: 0.90344834, g: 1, b: 0, a: 1}
     minimumFPS: 30
-  - color:
-      r: 1
-      g: 0.43448272
-      b: 0
-      a: 1
+  - color: {r: 1, g: 0.43448272, b: 0, a: 1}
     minimumFPS: 15
-  - color:
-      r: 1
-      g: 0
-      b: 0
-      a: 1
+  - color: {r: 1, g: 0, b: 0, a: 1}
     minimumFPS: 0
 --- !u!114 &114000011615599912
 MonoBehaviour:

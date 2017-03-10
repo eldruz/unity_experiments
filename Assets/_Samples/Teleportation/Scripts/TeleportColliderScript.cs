@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class TeleportColliderScript : Teleporter
 {
@@ -7,7 +6,7 @@ public class TeleportColliderScript : Teleporter
 
 	void Start ()
 	{
-		base.Start ();
+		Init ();
 		collider = GetComponent <Collider> ();
 	}
 

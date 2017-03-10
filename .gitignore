@@ -19,6 +19,7 @@ obj/
 *.pidb
 *.booproj
 *.svd
+.vscode/
 
 # OS Generated
 desktop.ini
