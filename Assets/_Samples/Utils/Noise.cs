@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public static class Noise {
+public static class Noise
+{
 
     // 0 <= persistance <= 1
     // lacunarity >= 1
@@ -39,9 +40,9 @@ public static class Noise {
                 for (int i = 0; i < octaves; i++)
                 {
                     // halfXXX : changing the scale zooms towards the center
-                    float sampleX = (x-halfWidth) / scale * frequency + octaveOffsets[i].x;
-                    float sampleY = (y-halfHeight) / scale * frequency + octaveOffsets[i].y;
-                    
+                    float sampleX = (x - halfWidth) / scale * frequency + octaveOffsets[i].x;
+                    float sampleY = (y - halfHeight) / scale * frequency + octaveOffsets[i].y;
+
                     float perlinValue = Mathf.PerlinNoise(sampleX, sampleY) * 2 - 1;
                     noiseHeight += perlinValue * amplitude;
 
@@ -49,7 +50,7 @@ public static class Noise {
                     frequency *= lacunarity;
                 }
 
-                noiseMap[x,y] = noiseHeight;
+                noiseMap[x, y] = noiseHeight;
                 maxNoiseHeight = Mathf.Max(noiseHeight, maxNoiseHeight);
                 minNoiseHeight = Mathf.Min(noiseHeight, minNoiseHeight);
             }
@@ -60,7 +61,7 @@ public static class Noise {
         {
             for (int x = 0; x < mapWidth; x++)
             {
-                noiseMap[x,y] = Mathf.InverseLerp(minNoiseHeight, maxNoiseHeight, noiseMap[x,y]);
+                noiseMap[x, y] = Mathf.InverseLerp(minNoiseHeight, maxNoiseHeight, noiseMap[x, y]);
             }
         }
 
